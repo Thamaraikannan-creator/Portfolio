@@ -1,0 +1,60 @@
+/* Footer.css */
+
+/* Footer container */
+.footer {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer content styling */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Copyright text */
+  .footer-content p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  /* Social icons container */
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Social icon images */
+  .footer-social a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  /* Hover effect for social icons */
+  .footer-social a:hover img {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .footer-content p {
+      font-size: 0.9rem;
+    }
+  
+    .footer-social a img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

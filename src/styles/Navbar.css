@@ -1,0 +1,67 @@
+/* Navbar.css */
+
+/* Basic navbar container styling */
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Flex styling for alignment */
+.Navbar .anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar links styling */
+.Navbar nav a {
+    color: #ffffff;
+
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: Arial, sans-serif;
+
+    margin: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect: color change and slide-up underline */
+.Navbar nav a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.Navbar nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.Navbar nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Active link styling */
+.Navbar nav a:active {
+    color: #ff4081;
+}
